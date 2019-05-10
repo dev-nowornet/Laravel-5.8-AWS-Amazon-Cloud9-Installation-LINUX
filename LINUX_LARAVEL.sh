@@ -28,11 +28,11 @@ printf '%s\n' ':%s/DB_PORT=3306/#  DB_PORT=3306/g' 'x'  | sudo ex .env
 printf '%s\n' ':%s/DB_DATABASE=homestead/#  DB_DATABASE=homestead/g' 'x'  | sudo ex .env
 printf '%s\n' ':%s/DB_USERNAME=homestead/#  DB_USERNAME=homestead/g' 'x'  | sudo ex .env
 printf '%s\n' ':%s/DB_PASSWORD=secret/#  DB_PASSWORD=/g' 'x'  | sudo ex .env
-
+rm -rf LINUX_LARAVEL.sh
 # LAUNCH LARAVEL:
 php artisan migrate
 php artisan serve --port=8080
 # from the AWS Cloud9 console menu choose Preview --> Preview Running Application
-rm -rf LINUX_LARAVEL.sh
+
 #Edited by Bretfelean Sorin Cristian
 
