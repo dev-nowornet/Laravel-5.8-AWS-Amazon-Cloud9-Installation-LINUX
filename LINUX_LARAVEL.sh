@@ -1,6 +1,6 @@
 # UPDATE PHP FROM 5.6 TO 7.2
-sudo yum remove php56*
-sudo yum install php72*
+sudo yum remove php56* -y
+sudo yum install php72* -y
 
 #INSTALL COMPOSER
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
